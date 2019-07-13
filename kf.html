@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link type="text/css" href="css/kf.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在线客服</title>
+</head>
+
+<body>
+    <div class="chat_container">
+        <div class="left_part">
+            <div class="user_info">
+                <div class="user_info_center">
+                    <div id="user_img">
+                        <img src="img/profie.jpg">
+                    </div>
+                    <div id="user_info">
+                        <p>Alejandro Tsai</p>
+                        <img src="img/Plus.png">
+                    </div>
+                    <div id="searchbar">
+                        <span class="iconfont icon-iconset0157"></span>
+                        <p>搜索最近联系人</p>
+                    </div>
+                </div>
+            </div>
+            <div class="message_lists">
+                <div id="kf1">
+                    <div class="kf_info">
+                        <div class="kf_img">
+                            <img src="img/kf1.png">
+                        </div>
+                        <span class="kf_name">京东客服</span>
+                        <div class="gf">
+                            官方
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right_part">
+            <div class="top_info">
+                <div class="kf_info_tiltle">
+                    <div class="kf_img_tiltle">
+                    <img src="img/kf1.png" alt=""></div>
+                    <span class="kf_name_tiltle">
+                        京东客服
+                    </span>
+                </div>
+            </div>
+            <div class="message_part">
+                <div class="message_info">
+                    <div id="mymessage">
+                    </div>
+
+                </div>
+                <div class="message_input">
+                    <div class="button">
+                         <span class="iconfont icon-biaoqing"></span>
+                        <span class="iconfont icon-xihuan"></span>
+                    </div>
+                    <input type="text" onkeydown="whichButton(event)" id="text">
+                    <div id="send">
+                        发送
+                    </div>
+                </div>
+            </div>
+            <div class="user_items">
+                <div class="column">
+                    <div class="column1">
+                        <p>正在咨询</p>
+                    </div>
+                    <div class="column2">
+                        <p>我的订单</p>
+                    </div>
+                    <div class="rencent_view">
+                        <div id="rencent_view">最近游览</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <p class="bottom_note">
+        Copyright © 2004-2020 JD All Right Reserved 京东JD.com 版权所有<a href="#">《JIMI服务条款》 </a><a
+            href="#">《JIMI服务--帮助说明》</a>
+    </p>
+</body>
+<script>
+var btn = document.getElementById("send");
+var num = -1;
+btn.onclick = function(){
+    var text = document.getElementById("text").value;
+    if(text == ""){
+        alert("和妹子说话一定要写内容哦");
+    }else{
+        var content = document.getElementsByClassName("message_info")[0];
+        content.innerHTML += "<div id='mymessage'><span> "+ text +"</span> <img src='img/profie.jpg'></div>";
+        setTimeout(function(){
+            content.innerHTML +="<div id='kf_message'><img src='img/kf1.png'><span>你说你🐎呢</span></div>";
+        },2000);
+        
+    }
+    document.getElementById("text").value="";
+}
+</script>
+</html>

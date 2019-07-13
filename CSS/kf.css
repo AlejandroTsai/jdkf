@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #2e2f3d;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.chat_container{
+    position: absolute;
+    height: 660px;
+    width: 1130px;
+    background-color: white;
+    border-radius: 5px;
+    left: calc(50% - 565px);
+    top: calc(50% - 330px);
+}
+.bottom_note{
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px;
+    left: 0;
+    width: 100%;
+}
+.bottom_note a{
+    color: red;
+    text-decoration: none;
+}
+.user_info{
+    background-color: #FF534C;
+    width: 250px;
+    height: 104px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.message_lists{
+    position: absolute;
+    width: 250px;
+    height: calc(100% - 104px);
+    top: 104px;
+    left: 0;
+    background-color: #fff;
+    border-right: 1px solid rgba(148, 148, 148, 0.486);
+    box-sizing: border-box;
+}
+.right_part{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(100% - 250px);
+    height: 100%;
+}
+.top_info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fafafa;
+    border-bottom: .5px solid rgba(148, 148, 148, 0.486);
+    box-sizing: border-box;
+}
+.message_part{
+    position: absolute;
+    height: calc(100% - 60px);
+    width: 550px;
+    top: 60px;
+    left: 0;
+    border-right: 1px solid rgba(148, 148, 148, 0.486);
+    box-sizing: border-box;
+}
+.user_items{
+    position: absolute;
+    width: calc(100% - 550px);
+    height: calc(100% - 60px);
+    top: 60px;
+    right: 0;
+}
+.message_info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:485px ;
+    width: 100%;
+    border-bottom: .5px solid rgba(148, 148, 148, 0.486);
+    box-sizing: border-box;
+    background-color:rgba(211, 211, 211, 0.301) ;
+}
+.message_input{
+    top: 485px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 485px);
+}
+#user_img{
+    height: 50px;
+    width: 50px;
+    float: left;
+    border-radius: 4px;
+    overflow: hidden;
+
+}
+#user_info{
+    float: left;
+    margin-left: 10px;
+}
+#user_img img{
+    width: 100%;
+}
+.user_info_center{
+    position: absolute;
+    width: 95%;
+    height: 85%;
+    top: 20%;
+    left: 10%;
+}
+#user_info p{
+    color: #fff;
+    font-size: 18px
+}
+#user_info img{
+    width: 40%;
+    margin-top: 7px;
+}
+#searchbar{
+    width: 200px;
+    height: 20px;
+    border-radius:5px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 12px;
+    line-height: 20px;
+}
+#searchbar span{
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+#searchbar p{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 0.7em;
+    color: #696969d7;
+}
+#kf1{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(160, 201, 240, 0.548);
+}
+.kf_info{
+    padding: 12px;
+}
+.kf_img{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    float: left;
+}
+.kf_img img{
+    width: 100%;
+}
+.kf_name{
+    float: left;
+    font-size: 0.9em;
+    margin-left: 6px;
+}
+.gf{
+    width: 32px;
+    height: 16px;
+    background-color: red;
+    color: #fff;
+    line-height: 16px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 0.8em;
+}
+.kf_info_tiltle{
+    padding: 10px;
+}
+.kf_img_tiltle{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    float: left;
+}
+.kf_img_tiltle img{
+    width: 100%;
+}
+.kf_name_tiltle{
+    margin-left: 5px;
+}
+.button{
+    position: absolute;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.button span{
+    margin-left: 15px;
+    font-size: 1.4em;
+}
+input{
+    width: 95%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: 2.5%;
+    border: none;
+    z-index: 1;;
+}
+.column{
+    height: 42px;
+    width: 100%;
+    font-size: .8em;
+}
+.column1{
+    border-top: 2px solid #FF534C;
+    box-sizing: border-box;
+    line-height: 42px;
+    text-align: center;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.column2{
+    background-color: rgba(211, 211, 211, 0.301);
+    line-height: 42px;
+    text-align: center;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.column2:hover{
+    cursor: pointer;
+}
+.rencent_view{
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    height: 30px;
+    font-size: 1.1em;
+    border-bottom: .3px solid rgba(0, 0, 0, 0.418);
+    box-sizing: border-box;
+}
+#rencent_view{
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 35px);
+    border-bottom: 2px solid #F23030;
+    box-sizing: border-box;
+    width: 70px;
+    line-height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#send{
+    height: 28px;
+    width: 56px;
+    border: #2e2f3d 1px solid;
+    border-radius: 3px;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 28px;
+    z-index: 100;
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+    box-sizing: border-box;
+}
+#send:hover{
+    cursor: pointer;
+    background-color: rgb(51, 131, 223);
+    color: white;
+    border: none;
+}
+#mymessage{
+    
+    margin-top: 20px;
+    text-align: right;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+#mymessage img{
+    width: 8%;
+    margin-right: 8px;
+    border-radius: 6px;
+}
+#mymessage span{
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 10px;
+    animation: pulse 1s;
+}
+#kf_message{
+    margin-top: 20px;
+    text-align: left;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+#kf_message img{
+    width: 8%;
+    margin-left: 8px;
+    border-radius: 3px;
+}
+#kf_message span{
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    animation: pulse 1s;
+}
